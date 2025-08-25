@@ -119,3 +119,4 @@ Uso pessoal / portfólio. Conteúdo textual, imagens e marca não devem ser reut
 Feito com código, dados e ☕ por **Júnior Melo**
 </div>
 
+Cache buster: Sun Aug 24 23:11:43 -03 2025
