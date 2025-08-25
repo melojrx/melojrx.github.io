@@ -5,7 +5,8 @@ import path from "path";
 
 // Site de usuário GitHub Pages (melojrx.github.io) sempre em raiz '/'
 export default defineConfig(() => ({
-  base: '/',
+  // Caminhos relativos para evitar problemas de MIME/404 no Pages
+  base: './',
   server: {
     host: "::",
     port: 8080,
