@@ -1,4 +1,4 @@
-name: Deploy GitHub Pages
+name: Deploy GitHub Pages (User Site)
 
 on:
   push:
@@ -32,9 +32,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        env:
-          BASE_PATH: /portifoliomelojrx/
-        run: pnpm build
+        run: pnpm build # base já é '/' para user site
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4

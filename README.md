@@ -74,17 +74,17 @@ Saída em `dist/`.
 
 ## 🚀 Deploy no GitHub Pages
 
-1. Certifique-se que o repositório chama `portifoliomelojrx` e está em: `https://github.com/<usuario>/portifoliomelojrx`.
-2. O build usa base `/portifoliomelojrx/` já configurada em `vite.config.ts`.
-3. Workflow em `.github/workflows/deploy.yml` faz:
-	 - build
-	 - publicação no branch `gh-pages`
-4. Ativar GitHub Pages apontando para o branch `gh-pages` (folder root).
+Agora configurado como **User Site**: repositório `melojrx.github.io` publicado em `https://melojrx.github.io/`.
 
-Deploy manual (opcional):
+Fluxo:
+1. Push na branch `main` dispara workflow `Deploy GitHub Pages (User Site)`.
+2. Workflow faz build (base `/`) e publica conteúdo da pasta `dist` no branch `gh-pages`.
+3. Em Settings > Pages selecione Source = GitHub Actions (ou branch `gh-pages` root, ambos funcionam com a action atual).
+
+Deploy manual (opcional somente para debug):
 ```bash
 pnpm build
-git subtree push --prefix dist origin gh-pages
+npx gh-pages -d dist # alternativa usando pacote gh-pages (não necessário normalmente)
 ```
 
 ## 👤 Sobre Mim
