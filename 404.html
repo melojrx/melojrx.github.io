@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecionando...</title>
+    <meta http-equiv="refresh" content="0; url=./" />
+    <script>
+      // Preserva rota para SPA
+      const redirect = () => {
+        const l = window.location;
+        const repoBase = '/portifoliomelojrx';
+        if (l.pathname.startsWith(repoBase)) {
+          const path = l.pathname.replace(repoBase, '');
+          const target = repoBase + '/#' + path + l.search + l.hash;
+          window.location.replace(target);
+        }
+      };
+      redirect();
+    </script>
+  </head>
+  <body>
+    Redirecionando...
+  </body>
+</html>

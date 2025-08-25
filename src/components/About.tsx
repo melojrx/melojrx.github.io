@@ -7,9 +7,9 @@ export const About = () => {
         <h2 className="text-3xl font-bold text-center mb-12">Sobre Mim</h2>
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="flex-shrink-0">
-            <Avatar className="w-48 h-48">
-              <AvatarImage src="https://github.com/shadcn.png" alt="Júnior Melo" />
-              <AvatarFallback>JM</AvatarFallback>
+            <Avatar className="w-48 h-48 ring-4 ring-primary/20">
+              <AvatarImage src={new URL("../../assets/profile.png", import.meta.url).pathname} alt="Júnior Melo" />
+              <AvatarFallback className="text-2xl">JM</AvatarFallback>
             </Avatar>
           </div>
           <div className="text-lg text-foreground/80 space-y-4">
