@@ -3,10 +3,9 @@ import dyadComponentTagger from "@dyad-sh/react-vite-component-tagger";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 
-// Site de usuário GitHub Pages (melojrx.github.io) sempre em raiz '/'
+// GitHub Pages user site: sempre usar base absoluto '/' 
 export default defineConfig(() => ({
-  // Caminhos relativos para evitar problemas de MIME/404 no Pages
-  base: './',
+  base: '/',
   server: {
     host: "::",
     port: 8080,
