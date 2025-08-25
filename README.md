@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="./public/logo-white.svg" alt="Logo Júnior Melo" width="80" height="80" />
+	<img src="./public/logo.svg" alt="Logo Júnior Melo" width="80" height="80" />
   
 	# Portfólio • Júnior Melo
   
