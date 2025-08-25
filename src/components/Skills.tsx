@@ -52,38 +52,38 @@ const skillsData: Record<string, SkillItem[]> = {
 
 export const Skills = () => {
   return (
-    <section id="skills" className="relative py-24 overflow-hidden">
+    <section id="skills" className="relative py-16 sm:py-20 lg:py-24 overflow-hidden">
       {/* Background decorativo */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
       <div className="pointer-events-none absolute inset-0 [background-image:radial-gradient(circle_at_center,rgba(255,255,255,0.06),transparent_60%)]" />
-      <div className="relative container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 tracking-tight">Competências</h2>
-        <p className="text-center text-foreground/70 max-w-2xl mx-auto mb-14 text-sm md:text-base">
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-3 sm:mb-4 tracking-tight">Competências</h2>
+        <p className="text-center text-foreground/70 max-w-2xl mx-auto mb-10 sm:mb-12 lg:mb-14 text-sm sm:text-base leading-relaxed">
           Ecosistema de tecnologias que utilizo para entregar soluções escaláveis, observáveis e orientadas a dados.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           {Object.entries(skillsData).map(([category, skills]) => (
             <div
               key={category}
               className="group relative p-[1px] rounded-xl bg-gradient-to-br from-primary/40 via-primary/10 to-transparent hover:from-primary/60 hover:via-primary/20 transition-colors"
             >
-              <div className="h-full w-full rounded-xl bg-background/70 backdrop-blur-sm p-5 border border-border/60 group-hover:border-primary/50 transition-colors">
-                <h3 className="text-sm font-semibold uppercase tracking-wide text-primary mb-4 flex items-center gap-2">
+              <div className="h-full w-full rounded-xl bg-background/70 backdrop-blur-sm p-4 sm:p-5 border border-border/60 group-hover:border-primary/50 transition-colors">
+                <h3 className="text-xs sm:text-sm font-semibold uppercase tracking-wide text-primary mb-3 sm:mb-4 flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
                   {category}
                 </h3>
-                <ul className="flex flex-wrap gap-2">
+                <ul className="flex flex-wrap gap-1.5 sm:gap-2">
                   {skills.map((skill) => (
                     <li key={skill.label} className="flex">
                       {skill.badge ? (
                         <img
                           src={skill.badge}
                           alt={skill.label}
-                          className="h-6 hover:scale-105 transition-transform"
+                          className="h-5 sm:h-6 hover:scale-105 transition-transform"
                           loading="lazy"
                         />
                       ) : (
-                        <span className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-[10px] font-semibold bg-secondary/70 text-secondary-foreground backdrop-blur-sm">
+                        <span className="inline-flex items-center rounded-full border px-2 sm:px-2.5 py-0.5 text-[9px] sm:text-[10px] font-semibold bg-secondary/70 text-secondary-foreground backdrop-blur-sm">
                           {skill.label}
                         </span>
                       )}

@@ -66,10 +66,10 @@ const projectsData: Array<{
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12">Projetos em Destaque</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section id="projects" className="py-16 sm:py-20 lg:py-24">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-10 lg:mb-12 tracking-tight">Projetos em Destaque</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {projectsData.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}
