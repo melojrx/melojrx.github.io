@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "pnpm",
+      "args": ["exec", "node", "server.js"],
+      "cwd": "./mcp-servers/playwright",
+      "trust": true
+    },
+    "portfolio-test": {
+      "command": "pnpm",
+      "args": ["exec", "node", "portfolio-test-server.js"],
+      "cwd": "./mcp-servers/playwright",
+      "trust": true
+    }
+  }
+}

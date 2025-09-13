@@ -122,6 +122,19 @@ pnpm build
 pnpm preview
 ```
 
+### **Testes com Playwright**
+
+```bash
+# Executar todos os testes
+pnpm test
+
+# Executar testes com interface gráfica
+pnpm test:ui
+
+# Visualizar relatório de testes
+pnpm test:report
+```
+
 ---
 
 ## 🌐 **Deploy & CI/CD**
@@ -148,6 +161,47 @@ pnpm build
 # Deploy com gh-pages (alternativo)
 npx gh-pages -d dist
 ```
+
+---
+
+## 🧪 **Testes com Playwright**
+
+Este projeto utiliza [Playwright](https://playwright.dev/) para testes end-to-end, garantindo a qualidade e funcionalidade do portfólio.
+
+### **Configuração**
+
+O Playwright já está configurado neste projeto com:
+
+- Testes para múltiplos navegadores (Chromium, Firefox, Webkit)
+- Servidor de desenvolvimento automático durante os testes
+- Relatórios HTML para visualização dos resultados
+- Interface gráfica para desenvolvimento de testes
+
+### **Executando Testes**
+
+```bash
+# Executar todos os testes em modo headless
+pnpm test
+
+# Executar testes com interface gráfica
+pnpm test:ui
+
+# Visualizar relatório de testes
+pnpm test:report
+```
+
+### **Estrutura de Testes**
+
+- `tests/` - Diretório com arquivos de teste
+- `tests/example.spec.ts` - Exemplo de teste básico
+- `tests/portfolio.spec.ts` - Testes específicos para o portfólio
+- `playwright.config.ts` - Configuração do Playwright
+
+### **Adicionando Novos Testes**
+
+1. Crie um novo arquivo com extensão `.spec.ts` no diretório `tests/`
+2. Utilize a [API do Playwright](https://playwright.dev/docs/api/class-page) para interagir com a página
+3. Execute os testes com `pnpm test` ou `pnpm test:ui`
 
 ---
 
