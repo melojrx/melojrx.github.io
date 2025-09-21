@@ -28,6 +28,29 @@ export const Experience = () => {
             </div>
           </div>
 
+          {/* Experiência Anterior - PRF */}
+          <div className="relative rounded-2xl p-4 sm:p-6 lg:p-8 bg-background/70 backdrop-blur border border-border/60 shadow-sm">
+            <div className="flex flex-col lg:flex-row lg:items-start gap-4 sm:gap-6">
+              <div className="grow space-y-3 sm:space-y-4">
+                <div>
+                  <h3 className="text-lg sm:text-xl font-semibold text-primary">Gestor Financeiro e Analista de Dados</h3>
+                  <p className="text-xs sm:text-sm uppercase tracking-wide text-foreground/60 font-medium mt-1">Servidor Público Federal</p>
+                </div>
+                <div className="space-y-2 text-foreground/80 text-sm sm:text-base leading-relaxed">
+                  <p><strong>Órgão:</strong> Ministério da Justiça - Polícia Rodoviária Federal</p>
+                  <p><strong>Período:</strong> 2010 - 2024</p>
+                  <p>Atuação na execução, gestão e administração financeira e orçamentária desde 2010, migrando de área para o Departamento de Polícia Rodoviária em 2022, com dedicação exclusiva à Equipe de Análise de Dados.</p>
+                  <p>Construção de soluções de dados, dashboards analíticas, projetos de IA, intranet institucional, dentre outras atividades de suporte tecnológico.</p>
+                </div>
+                <ul className="flex flex-wrap gap-1.5 sm:gap-2 pt-2 text-[10px] sm:text-[11px] font-medium">
+                  {['Gestão Financeira','Análise de Dados','Dashboards','IA','Intranet','Orçamento Público','Administração'].map(tag => (
+                    <li key={tag} className="px-2 py-0.5 rounded-full bg-secondary/60 text-foreground border border-border/50 whitespace-nowrap">{tag}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
           {/* Atuação em Projetos */}
           <div className="relative rounded-2xl p-4 sm:p-6 lg:p-8 bg-background/70 backdrop-blur border border-border/60 shadow-sm">
             <h3 className="text-base sm:text-lg font-semibold text-primary mb-3 sm:mb-4 flex items-center gap-2">

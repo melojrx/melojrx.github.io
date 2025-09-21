@@ -260,7 +260,6 @@ Atualmente **Servidor Público Federal** no **Ministério da Gestão e Inovaçã
 ### **🔄 Em Desenvolvimento**
 - [ ] Adição de imagens reais dos projetos
 - [ ] Páginas individuais de estudos de caso
-- [ ] Seção de blog/artigos técnicos
 - [ ] Analytics e métricas de visitação
 
 ### **💡 Próximas Features**

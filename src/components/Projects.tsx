@@ -62,6 +62,18 @@ const projectsData: Array<{
   siteUrl: "https://www.gov.br/compras/pt-br/cidadao/compras-publicas-dados-abertos",
   imageMode: "contain",
   },
+  {
+    title: "LimpaPro",
+    description: "Site institucional moderno e responsivo para empresa de limpeza profissional. Interface elegante com foco na conversão de leads e apresentação dos serviços.",
+    techGroups: [
+      { label: "Frontend", items: ["React", "TypeScript", "Next.js"] },
+      { label: "Styling", items: ["Tailwind CSS", "Framer Motion"] },
+      { label: "Deploy", items: ["Vercel"] },
+    ],
+    imageUrl: base + "limpapro1.png",
+    siteUrl: "https://limpapro.vercel.app/",
+    imageMode: "contain",
+  },
 ];
 
 export const Projects = () => {
