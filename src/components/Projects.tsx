@@ -13,68 +13,82 @@ const projectsData: Array<{
   caseStudyUrl?: string;
   imageMode?: "cover" | "contain";
 }> = [
-  {
-    title: "UrbanLive",
-    description: "Plataforma completa que conecta cidadãos e governo para uma zeladoria urbana mais ágil, transparente e colaborativa.",
-    techGroups: [
-      { label: "Backend", items: ["Django", "API Django", "Gunicorn", "Celery"] },
-      { label: "Frontend", items: ["Django Templates", "HTML", "CSS", "Bootstrap", "JavaScript"] },
-      { label: "Mobile", items: ["React Native"] },
-      { label: "Infra", items: ["Docker", "NGINX", "Redis"] },
-      { label: "Banco de Dados", items: ["Postgres"] },
-    ],
-  imageUrl: base + "urbanlive.png", // coloque o arquivo em public/urbanlive.png
-  imageMode: "contain",
-    siteUrl: "https://www.urbanlive.com.br/",
-  presentationUrl: "https://www.canva.com/design/DAGs6KRx-yE/04S6ys2Nq_Ndqc6EpMXt2g/watch",
-  },
-  {
-    title: "Costurai.com.br",
-  description: "Transforme a gestão da sua confecção com eficiência e controle total. Simplifique processos, controle a produção e potencialize seus resultados.",
-    techGroups: [
-      { label: "Backend", items: ["Django", "API Django", "Gunicorn", "Celery"] },
-      { label: "Frontend", items: ["Django Templates", "HTML", "CSS", "Bootstrap", "JavaScript"] },
-      { label: "Infra", items: ["Docker", "NGINX", "Redis"] },
-      { label: "Banco de Dados", items: ["Postgres"] },
-    ],
-    imageUrl: base + "costurai1.png", // colocar arquivo em public/costurai1.png
-  siteUrl: "https://www.costurai.com.br/",
-  imageMode: "contain",
-  },
-  {
-    title: "Indicaai",
-  description: "Plataforma marketplace B2B/B2C inovadora que conecta pessoas e empresas com necessidades a fornecedores qualificados. Usuários publicam demandas e recebem orçamentos personalizados de profissionais cadastrados.",
-    techGroups: [
-      { label: "Backend", items: ["Django", "API Django", "Gunicorn", "Celery"] },
-      { label: "Frontend", items: ["Django Templates", "HTML", "CSS", "Bootstrap", "JavaScript", "PWA"] },
-      { label: "Infra", items: ["Docker", "NGINX", "Redis"] },
-      { label: "Banco de Dados", items: ["Postgres"] },
-    ],
-  imageUrl: base + "indicai.png", // colocar arquivo em public/indicai.png
-  siteUrl: "https://necessito.online/",
-  imageMode: "contain",
-  },
-  {
-  title: "Portal de Dados Abertos do Governo Federal",
-  description: "Projetos da Coordenação de Transparência e Relatórios Gerenciais (DELOG/MGI): API de Dados Abertos, Allice (integração Compras Gov), Chatbot COTIN (IA), Portal PNCP em Números, entre outros ativos de transparência e análise.",
-  tags: ["API", "Dados Abertos", "ETL", "PowerBI", "Databricks", "Chatbot IA", "SQL"],
-  imageUrl: base + "DadosAbertos.png", // colocar arquivo em public/DadosAbertos.png
-  siteUrl: "https://www.gov.br/compras/pt-br/cidadao/compras-publicas-dados-abertos",
-  imageMode: "contain",
-  },
-  {
-    title: "LimpaPro",
-    description: "Site institucional moderno e responsivo para empresa de limpeza profissional. Interface elegante com foco na conversão de leads e apresentação dos serviços.",
-    techGroups: [
-      { label: "Frontend", items: ["React", "TypeScript", "Next.js"] },
-      { label: "Styling", items: ["Tailwind CSS", "Framer Motion"] },
-      { label: "Deploy", items: ["Vercel"] },
-    ],
-    imageUrl: base + "limpapro1.png",
-    siteUrl: "https://limpapro.vercel.app/",
-    imageMode: "contain",
-  },
-];
+    {
+      title: "UrbanLive",
+      description: "Plataforma completa que conecta cidadãos e governo para uma zeladoria urbana mais ágil, transparente e colaborativa.",
+      techGroups: [
+        { label: "Backend", items: ["Django", "API Django", "Gunicorn", "Celery"] },
+        { label: "Frontend", items: ["Django Templates", "HTML", "CSS", "Bootstrap", "JavaScript"] },
+        { label: "Mobile", items: ["React Native"] },
+        { label: "Infra", items: ["Docker", "NGINX", "Redis"] },
+        { label: "Banco de Dados", items: ["Postgres"] },
+      ],
+      imageUrl: base + "urbanlive.png", // coloque o arquivo em public/urbanlive.png
+      imageMode: "contain",
+      siteUrl: "https://www.urbanlive.com.br/",
+      presentationUrl: "https://www.canva.com/design/DAGs6KRx-yE/04S6ys2Nq_Ndqc6EpMXt2g/watch",
+    },
+    {
+      title: "Costurai.com.br",
+      description: "Transforme a gestão da sua confecção com eficiência e controle total. Simplifique processos, controle a produção e potencialize seus resultados.",
+      techGroups: [
+        { label: "Backend", items: ["Django", "API Django", "Gunicorn", "Celery"] },
+        { label: "Frontend", items: ["Django Templates", "HTML", "CSS", "Bootstrap", "JavaScript"] },
+        { label: "Infra", items: ["Docker", "NGINX", "Redis"] },
+        { label: "Banco de Dados", items: ["Postgres"] },
+      ],
+      imageUrl: base + "costurai1.png", // colocar arquivo em public/costurai1.png
+      siteUrl: "https://www.costurai.com.br/",
+      imageMode: "contain",
+    },
+    {
+      title: "Indicaai",
+      description: "Plataforma marketplace B2B/B2C inovadora que conecta pessoas e empresas com necessidades a fornecedores qualificados. Usuários publicam demandas e recebem orçamentos personalizados de profissionais cadastrados.",
+      techGroups: [
+        { label: "Backend", items: ["Django", "API Django", "Gunicorn", "Celery"] },
+        { label: "Frontend", items: ["Django Templates", "HTML", "CSS", "Bootstrap", "JavaScript", "PWA"] },
+        { label: "Infra", items: ["Docker", "NGINX", "Redis"] },
+        { label: "Banco de Dados", items: ["Postgres"] },
+      ],
+      imageUrl: base + "indicai.png", // colocar arquivo em public/indicai.png
+      siteUrl: "https://necessito.online/",
+      imageMode: "contain",
+    },
+    {
+      title: "Portal de Dados Abertos do Governo Federal",
+      description: "Projetos da Coordenação de Transparência e Relatórios Gerenciais (DELOG/MGI): API de Dados Abertos, Allice (integração Compras Gov), Chatbot COTIN (IA), Portal PNCP em Números, entre outros ativos de transparência e análise.",
+      tags: ["API", "Dados Abertos", "ETL", "PowerBI", "Databricks", "Chatbot IA", "SQL"],
+      imageUrl: base + "DadosAbertos.png", // colocar arquivo em public/DadosAbertos.png
+      siteUrl: "https://www.gov.br/compras/pt-br/cidadao/compras-publicas-dados-abertos",
+      imageMode: "contain",
+    },
+    {
+      title: "LimpaPro",
+      description: "Site institucional moderno e responsivo para empresa de limpeza profissional. Interface elegante com foco na conversão de leads e apresentação dos serviços.",
+      techGroups: [
+        { label: "Frontend", items: ["React", "TypeScript", "Next.js"] },
+        { label: "Styling", items: ["Tailwind CSS", "Framer Motion"] },
+        { label: "Deploy", items: ["Vercel"] },
+      ],
+      imageUrl: base + "limpapro1.png",
+      siteUrl: "https://limpapro.vercel.app/",
+      imageMode: "contain",
+    },
+    {
+      title: "Cowboy Ariza",
+      description: "E-commerce canadense da marca Cowboy Ariza. Projeto internacional desenvolvido em Django, VueJS e Postgres. Hospedado na Hostinger com integração Stripe para pagamentos e Montreal DropShip para frete.",
+      techGroups: [
+        { label: "Backend", items: ["Django"] },
+        { label: "Frontend", items: ["VueJS"] },
+        { label: "Banco de Dados", items: ["Postgres"] },
+        { label: "Infra", items: ["Hostinger"] },
+        { label: "Integrações", items: ["Stripe", "Montreal DropShip"] },
+      ],
+      imageUrl: base + "cowboy_ariza.png",
+      siteUrl: "https://cowboyariza.ca",
+      imageMode: "contain",
+    },
+  ];
 
 export const Projects = () => {
   return (
