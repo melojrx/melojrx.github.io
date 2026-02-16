@@ -29,6 +29,19 @@ const projectsData: Array<{
       presentationUrl: "https://www.canva.com/design/DAGs6KRx-yE/04S6ys2Nq_Ndqc6EpMXt2g/watch",
     },
     {
+      title: "Obreiro Virtual",
+      description: "Plataforma SaaS Multitenant para gestão eclesiástica completa. Sistema hierárquico de denominações, igrejas e filiais com módulos de membros, visitantes, QR Code para cadastro e permissões granulares.",
+      techGroups: [
+        { label: "Backend", items: ["Django", "Django REST Framework", "Gunicorn", "Celery"] },
+        { label: "Frontend", items: ["React", "TypeScript", "Vite"] },
+        { label: "Infra", items: ["Docker", "Docker Compose", "NGINX", "Redis"] },
+        { label: "Banco de Dados", items: ["PostgreSQL"] },
+      ],
+      imageUrl: base + "obreiro_screenshot.png",
+      imageMode: "contain",
+      siteUrl: "https://www.obreirovirtual.com/",
+    },
+    {
       title: "Costurai.com.br",
       description: "Transforme a gestão da sua confecção com eficiência e controle total. Simplifique processos, controle a produção e potencialize seus resultados.",
       techGroups: [
