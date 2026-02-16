@@ -1,23 +1,27 @@
+import { useTranslation } from 'react-i18next';
+
 export const Experience = () => {
+  const { t } = useTranslation();
+  
   return (
     <section id="experience" className="py-16 sm:py-20 lg:py-24 relative overflow-hidden">
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background via-secondary/40 to-background" />
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 sm:mb-10 text-center tracking-tight">Experiência Profissional</h2>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 sm:mb-10 text-center tracking-tight">{t('experience.title')}</h2>
         <div className="grid gap-8 sm:gap-10 max-w-5xl mx-auto">
           {/* Cargo Atual */}
           <div className="relative rounded-2xl p-4 sm:p-6 lg:p-8 bg-background/70 backdrop-blur border border-border/60 shadow-sm">
             <div className="flex flex-col lg:flex-row lg:items-start gap-4 sm:gap-6">
               <div className="grow space-y-3 sm:space-y-4">
                 <div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-primary">Engenharia de Dados, IA & Transparência</h3>
-                  <p className="text-xs sm:text-sm uppercase tracking-wide text-foreground/60 font-medium mt-1">Servidor Público Federal</p>
+                  <h3 className="text-lg sm:text-xl font-semibold text-primary">{t('experience.current.title')}</h3>
+                  <p className="text-xs sm:text-sm uppercase tracking-wide text-foreground/60 font-medium mt-1">{t('experience.current.type')}</p>
                 </div>
                 <div className="space-y-2 text-foreground/80 text-sm sm:text-base leading-relaxed">
-                  <p><strong>Órgão:</strong> Ministério da Gestão e Inovação em Serviços Públicos (MGI)</p>
-                  <p><strong>Unidade:</strong> COTIN - Coordenação de Transparência e Informações Referenciais / DELOG / SEGES</p>
-                  <p>Atuação em pipelines de dados (Airflow, Databricks, SQL), construção de camadas semânticas, automação de integração, modelagem analítica e aplicação de técnicas de IA para suporte a transparência pública e tomada de decisão.</p>
-                  <p>Contribuição em estratégias de governança, catálogos de dados e padronização de indicadores, sempre alinhando performance técnica e impacto institucional.</p>
+                  <p><strong>{t('experience.current.organization').split(' ')[0]}:</strong> {t('experience.current.organization')}</p>
+                  <p><strong>{t('experience.current.unit').split(' ')[0]}:</strong> {t('experience.current.unit')}</p>
+                  <p>{t('experience.current.description1')}</p>
+                  <p>{t('experience.current.description2')}</p>
                 </div>
                 <ul className="flex flex-wrap gap-1.5 sm:gap-2 pt-2 text-[10px] sm:text-[11px] font-medium">
                   {['Airflow','Databricks','Python','SQL','Transparência','Governança de Dados','IA aplicada'].map(tag => (
@@ -33,14 +37,14 @@ export const Experience = () => {
             <div className="flex flex-col lg:flex-row lg:items-start gap-4 sm:gap-6">
               <div className="grow space-y-3 sm:space-y-4">
                 <div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-primary">Gestor Financeiro e Analista de Dados</h3>
-                  <p className="text-xs sm:text-sm uppercase tracking-wide text-foreground/60 font-medium mt-1">Servidor Público Federal</p>
+                  <h3 className="text-lg sm:text-xl font-semibold text-primary">{t('experience.previous.title')}</h3>
+                  <p className="text-xs sm:text-sm uppercase tracking-wide text-foreground/60 font-medium mt-1">{t('experience.previous.type')}</p>
                 </div>
                 <div className="space-y-2 text-foreground/80 text-sm sm:text-base leading-relaxed">
-                  <p><strong>Órgão:</strong> Ministério da Justiça - Polícia Rodoviária Federal</p>
-                  <p><strong>Período:</strong> 2010 - 2024</p>
-                  <p>Atuação na execução, gestão e administração financeira e orçamentária desde 2010, migrando de área para o Departamento de Polícia Rodoviária em 2022, com dedicação exclusiva à Equipe de Análise de Dados.</p>
-                  <p>Construção de soluções de dados, dashboards analíticas, projetos de IA, intranet institucional, dentre outras atividades de suporte tecnológico.</p>
+                  <p><strong>{t('experience.previous.organization').split(' ')[0]}:</strong> {t('experience.previous.organization')}</p>
+                  <p><strong>{t('experience.previous.period').split(' ')[0]}:</strong> {t('experience.previous.period')}</p>
+                  <p>{t('experience.previous.description1')}</p>
+                  <p>{t('experience.previous.description2')}</p>
                 </div>
                 <ul className="flex flex-wrap gap-1.5 sm:gap-2 pt-2 text-[10px] sm:text-[11px] font-medium">
                   {['Gestão Financeira','Análise de Dados','Dashboards','IA','Intranet','Orçamento Público','Administração'].map(tag => (
@@ -55,43 +59,43 @@ export const Experience = () => {
           <div className="relative rounded-2xl p-4 sm:p-6 lg:p-8 bg-background/70 backdrop-blur border border-border/60 shadow-sm">
             <h3 className="text-base sm:text-lg font-semibold text-primary mb-3 sm:mb-4 flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
-              Atuação em Projetos de Desenvolvimento & Consultoria
+              {t('experience.projects.title')}
             </h3>
             <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 text-sm sm:text-base text-foreground/80">
               <div className="space-y-3">
-                <h4 className="font-semibold text-foreground text-sm sm:text-base">Soluções & Produtos</h4>
+                <h4 className="font-semibold text-foreground text-sm sm:text-base">{t('experience.projects.solutions.title')}</h4>
                 <ul className="space-y-1 list-disc list-inside text-sm">
-                  <li>Plataformas web full stack (Django, React, APIs REST)</li>
-                  <li>Aplicativos mobile (React Native, OTA updates)</li>
-                  <li>Marketplaces e sistemas multi-tenant</li>
-                  <li>Dashboards interativos e painéis executivos</li>
+                  <li>{t('experience.projects.solutions.item1')}</li>
+                  <li>{t('experience.projects.solutions.item2')}</li>
+                  <li>{t('experience.projects.solutions.item3')}</li>
+                  <li>{t('experience.projects.solutions.item4')}</li>
                 </ul>
               </div>
               <div className="space-y-3">
-                <h4 className="font-semibold text-foreground text-sm sm:text-base">Dados & Inteligência</h4>
+                <h4 className="font-semibold text-foreground text-sm sm:text-base">{t('experience.projects.data.title')}</h4>
                 <ul className="space-y-1 list-disc list-inside text-sm">
-                  <li>Pipelines ETL orquestrados (Airflow)</li>
-                  <li>Modelagem analítica e semântica</li>
-                  <li>Automação de relatórios e métricas</li>
-                  <li>Aplicação de IA assistiva no ciclo de desenvolvimento</li>
+                  <li>{t('experience.projects.data.item1')}</li>
+                  <li>{t('experience.projects.data.item2')}</li>
+                  <li>{t('experience.projects.data.item3')}</li>
+                  <li>{t('experience.projects.data.item4')}</li>
                 </ul>
               </div>
               <div className="space-y-3">
-                <h4 className="font-semibold text-foreground text-sm sm:text-base">DevOps & Operações</h4>
+                <h4 className="font-semibold text-foreground text-sm sm:text-base">{t('experience.projects.devops.title')}</h4>
                 <ul className="space-y-1 list-disc list-inside text-sm">
-                  <li>Containers (Docker) & orquestração (Kubernetes)</li>
-                  <li>NGINX, Gunicorn, observabilidade básica</li>
-                  <li>Integração contínua & automações</li>
-                  <li>Estratégias de versionamento e release</li>
+                  <li>{t('experience.projects.devops.item1')}</li>
+                  <li>{t('experience.projects.devops.item2')}</li>
+                  <li>{t('experience.projects.devops.item3')}</li>
+                  <li>{t('experience.projects.devops.item4')}</li>
                 </ul>
               </div>
               <div className="space-y-3">
-                <h4 className="font-semibold text-foreground text-sm sm:text-base">Consultoria & Apoio</h4>
+                <h4 className="font-semibold text-foreground text-sm sm:text-base">{t('experience.projects.consulting.title')}</h4>
                 <ul className="space-y-1 list-disc list-inside text-sm">
-                  <li>Mapeamento de requisitos e arquitetura inicial</li>
-                  <li>Mentoria em práticas de desenvolvimento assistido por IA</li>
-                  <li>Padronização de código e guidelines técnicos</li>
-                  <li>Workshops internos e transferência de conhecimento</li>
+                  <li>{t('experience.projects.consulting.item1')}</li>
+                  <li>{t('experience.projects.consulting.item2')}</li>
+                  <li>{t('experience.projects.consulting.item3')}</li>
+                  <li>{t('experience.projects.consulting.item4')}</li>
                 </ul>
               </div>
             </div>

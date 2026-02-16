@@ -1,0 +1,194 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "scheduleMeeting": "📞 Schedule Meeting"
+  },
+  "hero": {
+    "title": "Júnior Melo - Full Stack Developer and Data Analyst"
+  },
+  "about": {
+    "title": "About Me",
+    "profileAlt": "Photo of Júnior Melo",
+    "paragraph1": "Hello! I'm Júnior Melo, a professional passionate about solving complex problems at the intersection of technology, data, and business. My journey began in Economics, which gave me a solid foundation for understanding the strategic challenges of organizations.",
+    "paragraph2": "Today, I work as a Full Stack Developer and Data Analyst, combining my technical expertise with an analytical vision to build solutions that not only work but generate real value. I have a deep interest in data engineering, process automation, and the application of AI to create smarter and more efficient systems.",
+    "paragraph3": "Currently, as a Federal Public Servant at the Ministry of Management and Innovation, I apply my skills to promote transparency and efficiency in the public sector, a challenge that motivates me daily."
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": {
+      "frontend": "Frontend",
+      "mobile": "Mobile",
+      "backend": "Backend & APIs",
+      "data": "Data & AI",
+      "devops": "DevOps & Cloud",
+      "versionControl": "Version Control & Collaboration",
+      "tooling": "Tooling & AI Assist",
+      "design": "Design & UX"
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "techGroups": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "mobile": "Mobile",
+      "infra": "Infrastructure",
+      "database": "Database",
+      "styling": "Styling",
+      "deploy": "Deploy",
+      "integrations": "Integrations"
+    },
+    "buttons": {
+      "site": "Website",
+      "pitch": "Pitch",
+      "caseStudy": "View Case Study"
+    },
+    "items": {
+      "urbanlive": {
+        "description": "Complete platform that connects citizens and government for more agile, transparent, and collaborative urban stewardship."
+      },
+      "obreiro": {
+        "description": "Multitenant SaaS platform for complete church management. Hierarchical system of denominations, churches, and branches with member modules, visitors, QR Code registration, and granular permissions."
+      },
+      "costurai": {
+        "description": "Transform your garment factory management with efficiency and total control. Simplify processes, control production, and boost your results."
+      },
+      "indicaai": {
+        "description": "Innovative B2B/B2C marketplace platform that connects people and companies with needs to qualified suppliers. Users post demands and receive personalized quotes from registered professionals."
+      },
+      "dadosabertos": {
+        "description": "Projects from the Coordination of Transparency and Management Reports (DELOG/MGI): Open Data API, Allice (Compras Gov integration), COTIN Chatbot (AI), PNCP in Numbers Portal, among other transparency and analysis assets."
+      },
+      "limpapro": {
+        "description": "Modern and responsive institutional website for professional cleaning company. Elegant interface focused on lead conversion and service presentation."
+      },
+      "cowboy": {
+        "description": "Canadian e-commerce for Cowboy Ariza brand. International project developed in Django, VueJS, and Postgres. Hosted on Hostinger with Stripe integration for payments and Montreal DropShip for shipping."
+      }
+    }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "current": {
+      "title": "Data Engineering, AI & Transparency",
+      "type": "Federal Public Servant",
+      "organization": "Ministry of Management and Innovation in Public Services (MGI)",
+      "unit": "COTIN - Coordination of Transparency and Reference Information / DELOG / SEGES",
+      "description1": "Working on data pipelines (Airflow, Databricks, SQL), building semantic layers, integration automation, analytical modeling, and applying AI techniques to support public transparency and decision-making.",
+      "description2": "Contributing to governance strategies, data catalogs, and indicator standardization, always aligning technical performance with institutional impact."
+    },
+    "previous": {
+      "title": "Financial Manager and Data Analyst",
+      "type": "Federal Public Servant",
+      "organization": "Ministry of Justice - Federal Highway Police",
+      "period": "2010 - 2024",
+      "description1": "Working in budget and financial execution, management, and administration since 2010, moving to the Federal Highway Police Department in 2022, with exclusive dedication to the Data Analysis Team.",
+      "description2": "Building data solutions, analytical dashboards, AI projects, institutional intranet, among other technology support activities."
+    },
+    "projects": {
+      "title": "Development & Consulting Projects",
+      "solutions": {
+        "title": "Solutions & Products",
+        "item1": "Full stack web platforms (Django, React, REST APIs)",
+        "item2": "Mobile applications (React Native, OTA updates)",
+        "item3": "Marketplaces and multi-tenant systems",
+        "item4": "Interactive dashboards and executive panels"
+      },
+      "data": {
+        "title": "Data & Intelligence",
+        "item1": "Orchestrated ETL pipelines (Airflow)",
+        "item2": "Analytical and semantic modeling",
+        "item3": "Report and metrics automation",
+        "item4": "AI application in development cycle"
+      },
+      "devops": {
+        "title": "DevOps & Operations",
+        "item1": "Containers (Docker) & orchestration (Kubernetes)",
+        "item2": "NGINX, Gunicorn, basic observability",
+        "item3": "Continuous integration & automation",
+        "item4": "Versioning and release strategies"
+      },
+      "consulting": {
+        "title": "Consulting & Support",
+        "item1": "Requirements mapping and initial architecture",
+        "item2": "Mentoring in AI-assisted development practices",
+        "item3": "Code standardization and technical guidelines",
+        "item4": "Internal workshops and knowledge transfer"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "Trust built on real projects",
+    "description": "Testimonials from professionals I've worked directly with — a sample of the impact generated in data, AI, and digital product squads.",
+    "context": {
+      "sameTeam": "Worked on the same team",
+      "differentTeam": "Worked with Júnior on different teams",
+      "client": "Júnior was {{name}}'s client",
+      "collaborated": "Collaborated with Júnior on {{subject}}"
+    },
+    "items": {
+      "hugo": {
+        "name": "Hugo Souto",
+        "role": "AI Solutions Engineer and Coordinator",
+        "company": "Digital Government Secretariat",
+        "text": "Júnior joined the data team of the Federal Government's procurement systems with a rare profile, that of someone who delivers. He brought, along with his tranquility, his extensive experience in developing web projects, data, and AI to lead major projects that today impact the entire public service. He is a professional eager for knowledge and to stay updated with state-of-the-art technologies and frameworks in data and AI. It was a pleasure to be his colleague and it's a pleasure to be his friend.",
+        "context": "Worked on the same team",
+        "date": "September 2, 2025"
+      },
+      "joedson": {
+        "name": "Joedson Camilo",
+        "role": "National Director of Information Technology and Communication",
+        "text": "Experienced and competent professional, with good articulation, good communication, teamwork. Leadership and Proactivity. In addition to humility and being a formidable person. I highly recommend!!!! DTIC/PRF doors are always open!",
+        "context": "Worked with Júnior on different teams",
+        "date": "August 26, 2024"
+      },
+      "luiz": {
+        "name": "Luiz Guedes",
+        "role": "Founder @ StoryMode & EPICdigitais | Playful Creative EduTechie | GenZ Specialist | Educator | Consultant | PMO | BNI | IAA | BR Angels",
+        "text": "Melo is an innovative professional, always connected with trends and growth opportunities. It was a pleasure working with him on cutting-edge technology projects.",
+        "context": "Júnior was Luiz's client",
+        "date": "August 29, 2024"
+      },
+      "magnum": {
+        "name": "Magnum Costa de Oliveira",
+        "role": "Coordinator of Transparency and Management Information/DELOG/MGI",
+        "text": "Dear all, It is with great satisfaction that I recommend José Maria Melo Junior as an excellent fullstack developer, whose contribution has been absolutely fundamental in developing robust APIs and applications integrated with artificial intelligence. Throughout our collaboration, José demonstrated exceptional technical mastery in the entire development cycle — from backend to frontend —, with emphasis on creating scalable, secure, and optimized APIs, in addition to the fluid integration of AI models in real business solutions. His ability to translate complex requirements into clean, performant, and easy-to-maintain architectures is impressive. In addition to technical competence, José stands out for his proactivity, clarity in communication, and focus on results. He not only delivers high-quality code, but also proposes architectural improvements and anticipates challenges, raising the standard of the entire team. Without a doubt, José Maria Melo Junior is a rare professional in the market — someone who combines technical depth, product vision, and passion for innovation. I recommend him with complete confidence for any project that requires excellence in fullstack development and artificial intelligence.",
+        "context": "Collaborated with Júnior on AI integrations"
+      }
+    },
+    "footer": "Want to see more? Check out my LinkedIn profile or contact me for additional references.",
+    "swipeHint": "Swipe to explore more testimonials.",
+    "badge": {
+      "recommendation": "Recommendation",
+      "profile": "Profile"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Fill out the form or use the links in the footer to reach me.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "message": "Message",
+      "messagePlaceholder": "Type your message here...",
+      "submit": "Send"
+    }
+  },
+  "footer": {
+    "copyright": "© {{year}} Júnior Melo. All rights reserved.",
+    "ariaLabels": {
+      "github": "GitHub: melojrx",
+      "email": "Send email to jrmeloafrf@gmail.com",
+      "linkedin": "LinkedIn",
+      "medium": "Medium"
+    }
+  }
+}

@@ -3,10 +3,12 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useCallback } from "react";
+import { useTranslation } from 'react-i18next';
 
 const DEST_EMAIL = "jrmeloafrf@gmail.com";
 
 export const Contact = () => {
+  const { t } = useTranslation();
   const handleSubmit = useCallback((e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
@@ -32,45 +34,45 @@ export const Contact = () => {
     <section id="contact" className="py-16 sm:py-20 lg:py-24 relative overflow-hidden">
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background via-secondary/30 to-background" />
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-3 sm:mb-4 tracking-tight">Contato</h2>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-3 sm:mb-4 tracking-tight">{t('contact.title')}</h2>
         <p className="text-center text-foreground/70 mb-8 sm:mb-10 text-sm sm:text-base leading-relaxed max-w-lg mx-auto">
-          Preencha o formulário ou use os links no rodapé para falar comigo.
+          {t('contact.description')}
         </p>
         <form onSubmit={handleSubmit} className="max-w-xl mx-auto space-y-4 sm:space-y-6 bg-background/70 backdrop-blur rounded-xl border border-border/60 p-4 sm:p-6 lg:p-8 shadow-sm">
           <div className="space-y-1 sm:space-y-2">
-            <Label htmlFor="name" className="text-sm font-medium">Nome</Label>
+            <Label htmlFor="name" className="text-sm font-medium">{t('contact.form.name')}</Label>
             <Input 
               id="name" 
               name="name" 
               type="text" 
-              placeholder="Seu nome completo" 
+              placeholder={t('contact.form.namePlaceholder')}
               autoComplete="name"
               className="h-10 sm:h-11" 
             />
           </div>
           <div className="space-y-1 sm:space-y-2">
-            <Label htmlFor="email" className="text-sm font-medium">Email</Label>
+            <Label htmlFor="email" className="text-sm font-medium">{t('contact.form.email')}</Label>
             <Input 
               id="email" 
               name="email" 
               type="email" 
-              placeholder="seu.email@exemplo.com" 
+              placeholder={t('contact.form.emailPlaceholder')}
               autoComplete="email"
               className="h-10 sm:h-11" 
             />
           </div>
           <div className="space-y-1 sm:space-y-2">
-            <Label htmlFor="message" className="text-sm font-medium">Mensagem</Label>
+            <Label htmlFor="message" className="text-sm font-medium">{t('contact.form.message')}</Label>
             <Textarea 
               id="message" 
               name="message" 
-              placeholder="Como posso te ajudar?" 
+              placeholder={t('contact.form.messagePlaceholder')}
               rows={4}
               className="min-h-[100px] sm:min-h-[120px] resize-none" 
             />
           </div>
           <Button type="submit" className="w-full h-10 sm:h-11 text-sm sm:text-base">
-            Enviar Mensagem
+            {t('contact.form.submit')}
           </Button>
           <p className="text-[10px] sm:text-[11px] text-center text-foreground/50 leading-relaxed">
             O botão abrirá seu cliente de e-mail com a mensagem pré-preenchida.

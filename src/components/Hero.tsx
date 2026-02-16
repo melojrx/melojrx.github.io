@@ -1,6 +1,8 @@
 // Hero minimalista responsivo com imagem de fundo otimizada
+import { useTranslation } from 'react-i18next';
 
 export const Hero = () => {
+  const { t } = useTranslation();
   const backgroundImage = new URL("../../assets/Developer Fundo MeloJrx.jpg", import.meta.url).pathname;
   
   return (
@@ -22,7 +24,7 @@ export const Hero = () => {
       <div className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         <div className="text-center space-y-4 sm:space-y-6">
           {/* Título oculto mas acessível para SEO */}
-          <h1 className="sr-only">Júnior Melo - Desenvolvedor Full Stack e Analista de Dados</h1>
+          <h1 className="sr-only">{t('hero.title')}</h1>
           
           {/* Indicador de scroll para desktop */}
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">

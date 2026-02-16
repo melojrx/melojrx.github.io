@@ -1,0 +1,194 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "skills": "Competências",
+    "projects": "Projetos",
+    "experience": "Experiência",
+    "testimonials": "Recomendações",
+    "contact": "Contato",
+    "scheduleMeeting": "📞 Agendar Reunião"
+  },
+  "hero": {
+    "title": "Júnior Melo - Desenvolvedor Full Stack e Analista de Dados"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "profileAlt": "Foto de Júnior Melo",
+    "paragraph1": "Olá! Sou Júnior Melo, um profissional apaixonado por resolver problemas complexos na interseção entre tecnologia, dados e negócios. Minha jornada começou na Economia, o que me deu uma base sólida para entender os desafios estratégicos das organizações.",
+    "paragraph2": "Hoje, atuo como Desenvolvedor Full Stack e Analista de Dados, combinando minha expertise técnica com uma visão analítica para construir soluções que não apenas funcionam, mas que geram valor real. Tenho um profundo interesse em engenharia de dados, automação de processos e na aplicação de IA para criar sistemas mais inteligentes e eficientes.",
+    "paragraph3": "Atualmente, como Servidor Público Federal no Ministério da Gestão e Inovação, aplico minhas habilidades para promover a transparência e a eficiência no setor público, um desafio que me motiva diariamente."
+  },
+  "skills": {
+    "title": "Competências",
+    "categories": {
+      "frontend": "Frontend",
+      "mobile": "Mobile",
+      "backend": "Backend & APIs",
+      "data": "Dados & IA",
+      "devops": "DevOps & Cloud",
+      "versionControl": "Versionamento & Colaboração",
+      "tooling": "Tooling & AI Assist",
+      "design": "Design & UX"
+    }
+  },
+  "projects": {
+    "title": "Projetos em Destaque",
+    "techGroups": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "mobile": "Mobile",
+      "infra": "Infra",
+      "database": "Banco de Dados",
+      "styling": "Styling",
+      "deploy": "Deploy",
+      "integrations": "Integrações"
+    },
+    "buttons": {
+      "site": "Site",
+      "pitch": "Pitch",
+      "caseStudy": "Ver Estudo de Caso"
+    },
+    "items": {
+      "urbanlive": {
+        "description": "Plataforma completa que conecta cidadãos e governo para uma zeladoria urbana mais ágil, transparente e colaborativa."
+      },
+      "obreiro": {
+        "description": "Plataforma SaaS Multitenant para gestão eclesiástica completa. Sistema hierárquico de denominações, igrejas e filiais com módulos de membros, visitantes, QR Code para cadastro e permissões granulares."
+      },
+      "costurai": {
+        "description": "Transforme a gestão da sua confecção com eficiência e controle total. Simplifique processos, controle a produção e potencialize seus resultados."
+      },
+      "indicaai": {
+        "description": "Plataforma marketplace B2B/B2C inovadora que conecta pessoas e empresas com necessidades a fornecedores qualificados. Usuários publicam demandas e recebem orçamentos personalizados de profissionais cadastrados."
+      },
+      "dadosabertos": {
+        "description": "Projetos da Coordenação de Transparência e Relatórios Gerenciais (DELOG/MGI): API de Dados Abertos, Allice (integração Compras Gov), Chatbot COTIN (IA), Portal PNCP em Números, entre outros ativos de transparência e análise."
+      },
+      "limpapro": {
+        "description": "Site institucional moderno e responsivo para empresa de limpeza profissional. Interface elegante com foco na conversão de leads e apresentação dos serviços."
+      },
+      "cowboy": {
+        "description": "E-commerce canadense da marca Cowboy Ariza. Projeto internacional desenvolvido em Django, VueJS e Postgres. Hospedado na Hostinger com integração Stripe para pagamentos e Montreal DropShip para frete."
+      }
+    }
+  },
+  "experience": {
+    "title": "Experiência Profissional",
+    "current": {
+      "title": "Engenharia de Dados, IA & Transparência",
+      "type": "Servidor Público Federal",
+      "organization": "Ministério da Gestão e Inovação em Serviços Públicos (MGI)",
+      "unit": "COTIN - Coordenação de Transparência e Informações Referenciais / DELOG / SEGES",
+      "description1": "Atuação em pipelines de dados (Airflow, Databricks, SQL), construção de camadas semânticas, automação de integração, modelagem analítica e aplicação de técnicas de IA para suporte a transparência pública e tomada de decisão.",
+      "description2": "Contribuição em estratégias de governança, catálogos de dados e padronização de indicadores, sempre alinhando performance técnica e impacto institucional."
+    },
+    "previous": {
+      "title": "Gestor Financeiro e Analista de Dados",
+      "type": "Servidor Público Federal",
+      "organization": "Ministério da Justiça - Polícia Rodoviária Federal",
+      "period": "2010 - 2024",
+      "description1": "Atuação na execução, gestão e administração financeira e orçamentária desde 2010, migrando de área para o Departamento de Polícia Rodoviária em 2022, com dedicação exclusiva à Equipe de Análise de Dados.",
+      "description2": "Construção de soluções de dados, dashboards analíticas, projetos de IA, intranet institucional, dentre outras atividades de suporte tecnológico."
+    },
+    "projects": {
+      "title": "Atuação em Projetos de Desenvolvimento & Consultoria",
+      "solutions": {
+        "title": "Soluções & Produtos",
+        "item1": "Plataformas web full stack (Django, React, APIs REST)",
+        "item2": "Aplicativos mobile (React Native, OTA updates)",
+        "item3": "Marketplaces e sistemas multi-tenant",
+        "item4": "Dashboards interativos e painéis executivos"
+      },
+      "data": {
+        "title": "Dados & Inteligência",
+        "item1": "Pipelines ETL orquestrados (Airflow)",
+        "item2": "Modelagem analítica e semântica",
+        "item3": "Automação de relatórios e métricas",
+        "item4": "Aplicação de IA assistiva no ciclo de desenvolvimento"
+      },
+      "devops": {
+        "title": "DevOps & Operações",
+        "item1": "Containers (Docker) & orquestração (Kubernetes)",
+        "item2": "NGINX, Gunicorn, observabilidade básica",
+        "item3": "Integração contínua & automações",
+        "item4": "Estratégias de versionamento e release"
+      },
+      "consulting": {
+        "title": "Consultoria & Apoio",
+        "item1": "Mapeamento de requisitos e arquitetura inicial",
+        "item2": "Mentoria em práticas de desenvolvimento assistido por IA",
+        "item3": "Padronização de código e guidelines técnicos",
+        "item4": "Workshops internos e transferência de conhecimento"
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Recomendações",
+    "subtitle": "Confiança construída em projetos reais",
+    "description": "Depoimentos de profissionais com quem trabalhei diretamente — uma amostra do impacto gerado em squads de dados, IA e produtos digitais.",
+    "context": {
+      "sameTeam": "Trabalhava na mesma equipe",
+      "differentTeam": "Trabalhava com Júnior em equipes diferentes",
+      "client": "Júnior era cliente de {{name}}",
+      "collaborated": "Colaborava com Júnior em {{subject}}"
+    },
+    "items": {
+      "hugo": {
+        "name": "Hugo Souto",
+        "role": "Engenheiro de Soluções de IA e Coordenador",
+        "company": "Secretaria de Governo Digital",
+        "text": "O Júnior veio para a equipe de dados dos sistemas de compras do Governo Federal com um perfil raro, de alguém que executa. Trouxe, junto com sua tranquilidade, sua ampla experiência no desenvolvimento de projetos web, de dados e de IA para liderar grandes projetos que hoje impactam todo o serviço público. É um profissional ávido por conhecimento e por se manter atualizado com tecnologias e frameworks estado-de-arte em dados e IA. Foi uma satisfação ser seu colega e é um prazer ser seu amigo.",
+        "context": "Trabalhava na mesma equipe",
+        "date": "2 de setembro de 2025"
+      },
+      "joedson": {
+        "name": "Joedson Camilo",
+        "role": "Diretor Nacional de Tecnologia da Informação e comunicação",
+        "text": "Profissional experiente e competente, com boa articulação, boa comunicação, trabalho em equipe. Liderança e Proatividade. Além de humidade e uma pessoa formidável. Super recomendo!!!! Portas da DTIC/PRF sempre abertas!",
+        "context": "Trabalhava com Júnior em equipes diferentes",
+        "date": "26 de agosto de 2024"
+      },
+      "luiz": {
+        "name": "Luiz Guedes",
+        "role": "Founder @ StoryMode & EPICdigitais | Playful Creative EduTechie | GenZ Specialist | Educator | Consultant | PMO | BNI | IAA | BR Angels",
+        "text": "Melo é um profissional inovador, sempre conectado com tendências e oportunidades de crescimento. Foi um prazer trabalhar com ele em projetos de ponta tecnológica.",
+        "context": "Júnior era cliente de Luiz",
+        "date": "29 de agosto de 2024"
+      },
+      "magnum": {
+        "name": "Magnum Costa de Oliveira",
+        "role": "Coordenador de Transparência e Informações Gerenciais/DELOG/MGI",
+        "text": "Prezados, É com grande satisfação que recomendo José Maria Melo Junior como um excelente desenvolvedor fullstack, cuja contribuição tem sido absolutamente fundamental no desenvolvimento de APIs robustas e aplicações integradas com inteligência artificial. Ao longo de nossa colaboração, José demonstrou domínio técnico excepcional em todo o ciclo de desenvolvimento — do backend ao frontend —, com destaque para a criação de APIs escaláveis, seguras e otimizadas, além da integração fluida de modelos de IA em soluções reais de negócios. Sua capacidade de traduzir requisitos complexos em arquiteturas limpas, performáticas e de fácil manutenção é impressionante. Além da competência técnica, José se destaca pela proatividade, clareza na comunicação e foco em resultados. Ele não apenas entrega código de alta qualidade, mas também propõe melhorias arquiteturais e antecipa desafios, elevando o padrão de todo o time. Sem dúvidas, José Maria Melo Junior é um profissional raro no mercado — alguém que une profundidade técnica, visão de produto e paixão por inovação. Recomendo-o com total confiança para qualquer projeto que exija excelência em desenvolvimento fullstack e inteligência artificial.",
+        "context": "Colaborava com Júnior em integrações de IA"
+      }
+    },
+    "footer": "Quer ver mais? Consulte meu perfil no LinkedIn ou entre em contato para referências adicionais.",
+    "swipeHint": "Arraste para o lado para explorar mais recomendações.",
+    "badge": {
+      "recommendation": "Recomendação",
+      "profile": "Perfil"
+    }
+  },
+  "contact": {
+    "title": "Contato",
+    "description": "Preencha o formulário ou use os links no rodapé para falar comigo.",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Seu nome completo",
+      "email": "Email",
+      "emailPlaceholder": "seu@email.com",
+      "message": "Mensagem",
+      "messagePlaceholder": "Digite sua mensagem aqui...",
+      "submit": "Enviar"
+    }
+  },
+  "footer": {
+    "copyright": "© {{year}} Júnior Melo. Todos os direitos reservados.",
+    "ariaLabels": {
+      "github": "GitHub: melojrx",
+      "email": "Enviar email para jrmeloafrf@gmail.com",
+      "linkedin": "LinkedIn",
+      "medium": "Medium"
+    }
+  }
+}

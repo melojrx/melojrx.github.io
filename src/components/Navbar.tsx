@@ -1,20 +1,23 @@
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { useState, useEffect } from "react";
 import { Menu, X, Headphones } from "lucide-react";
 import { Link } from "react-router-dom";
-
-const navLinks = [
-  { name: "Sobre", href: "#about" },
-  { name: "Competências", href: "#skills" },
-  { name: "Projetos", href: "#projects" },
-  { name: "Recomendações", href: "#testimonials" },
-  { name: "Contato", href: "#contact" },
-];
+import { useTranslation } from 'react-i18next';
 
 export const Navbar = () => {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  const navLinks = [
+    { name: t('nav.about'), href: "#about" },
+    { name: t('nav.skills'), href: "#skills" },
+    { name: t('nav.projects'), href: "#projects" },
+    { name: t('nav.testimonials'), href: "#testimonials" },
+    { name: t('nav.contact'), href: "#contact" },
+  ];
 
   // Detectar se é mobile para ajustar o link do logo
   useEffect(() => {
@@ -78,6 +81,9 @@ export const Navbar = () => {
           </div>
 
           <div className="flex items-center space-x-3">
+            {/* Language Switcher */}
+            <LanguageSwitcher />
+            
             {/* Theme Toggle */}
             <ThemeToggle />
             
@@ -85,7 +91,7 @@ export const Navbar = () => {
             <Button variant="outline" size="sm" className="hidden sm:inline-flex gap-2 group transition-all duration-300 hover:scale-105 hover:shadow-md hover:border-primary/50" asChild>
               <a href="#contact">
                 <Headphones className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
-                Fale Comigo
+                {t('nav.contact')}
               </a>
             </Button>
 
@@ -127,15 +133,19 @@ export const Navbar = () => {
                   </a>
                 )
               ))}
-              <div className="px-3 py-2 flex items-center justify-between">
-                <div className="flex items-center space-x-2">
+              <div className="px-3 py-2 space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-foreground/80">Idioma</span>
+                  <LanguageSwitcher />
+                </div>
+                <div className="flex items-center justify-between">
                   <span className="text-sm text-foreground/80">Tema</span>
                   <ThemeToggle />
                 </div>
-                <Button variant="outline" size="sm" className="gap-2 group transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:border-primary/50 active:scale-[0.98]" asChild>
+                <Button variant="outline" size="sm" className="w-full gap-2 group transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:border-primary/50 active:scale-[0.98]" asChild>
                   <a href="#contact" onClick={closeMenu}>
                     <Headphones className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
-                    Fale Comigo
+                    {t('nav.contact')}
                   </a>
                 </Button>
               </div>

@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Globe, PlayCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from 'react-i18next';
 
 interface TechGroup {
   label: string;
@@ -22,6 +23,7 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard = ({ title, description, tags, techGroups, imageUrl, siteUrl, presentationUrl, caseStudyUrl, imageMode = "cover" }: ProjectCardProps) => {
+  const { t } = useTranslation();
   const hasFooter = !!(siteUrl || presentationUrl || caseStudyUrl);
   return (
     <Card className="flex flex-col h-full transition-transform duration-300 hover:scale-[1.02]">
@@ -78,21 +80,21 @@ export const ProjectCard = ({ title, description, tags, techGroups, imageUrl, si
           {siteUrl && (
             <Button asChild variant="secondary" size="sm" className="gap-2 flex-1 w-full sm:w-auto">
               <a href={siteUrl} target="_blank" rel="noopener noreferrer" aria-label={`Visitar site do projeto ${title}`}>
-                <Globe className="h-4 w-4" /> Site
+                <Globe className="h-4 w-4" /> {t('projects.buttons.site')}
               </a>
             </Button>
           )}
           {presentationUrl && (
             <Button asChild variant="outline" size="sm" className="gap-2 flex-1 w-full sm:w-auto">
               <a href={presentationUrl} target="_blank" rel="noopener noreferrer" aria-label={`Ver apresentação do projeto ${title}`}>
-                <PlayCircle className="h-4 w-4" /> Pitch
+                <PlayCircle className="h-4 w-4" /> {t('projects.buttons.pitch')}
               </a>
             </Button>
           )}
           {caseStudyUrl && (
             <Button asChild variant="ghost" size="sm" className="gap-2 flex-1 justify-start w-full sm:w-auto">
               <a href={caseStudyUrl} target="_blank" rel="noopener noreferrer" aria-label={`Ler estudo de caso do projeto ${title}`}>
-                Ver Estudo de Caso <ArrowRight className="h-4 w-4" />
+                {t('projects.buttons.caseStudy')} <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
           )}

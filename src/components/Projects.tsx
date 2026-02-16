@@ -1,41 +1,46 @@
 import { ProjectCard } from "./ProjectCard";
+import { useTranslation } from 'react-i18next';
 
 // Usar BASE_URL garante que assets funcionem em GitHub Pages (subpasta)
 const base = import.meta.env.BASE_URL;
-const projectsData: Array<{
-  title: string;
-  description: string;
-  tags?: string[];
-  techGroups?: { label: string; items: string[] }[];
-  imageUrl: string;
-  siteUrl?: string;
-  presentationUrl?: string;
-  caseStudyUrl?: string;
-  imageMode?: "cover" | "contain";
-}> = [
+
+export const Projects = () => {
+  const { t } = useTranslation();
+  
+  const projectsData: Array<{
+    title: string;
+    description: string;
+    tags?: string[];
+    techGroups?: { label: string; items: string[] }[];
+    imageUrl: string;
+    siteUrl?: string;
+    presentationUrl?: string;
+    caseStudyUrl?: string;
+    imageMode?: "cover" | "contain";
+  }> = [
     {
       title: "UrbanLive",
-      description: "Plataforma completa que conecta cidadãos e governo para uma zeladoria urbana mais ágil, transparente e colaborativa.",
+      description: t('projects.items.urbanlive.description'),
       techGroups: [
-        { label: "Backend", items: ["Django", "API Django", "Gunicorn", "Celery"] },
-        { label: "Frontend", items: ["Django Templates", "HTML", "CSS", "Bootstrap", "JavaScript"] },
-        { label: "Mobile", items: ["React Native"] },
-        { label: "Infra", items: ["Docker", "NGINX", "Redis"] },
-        { label: "Banco de Dados", items: ["Postgres"] },
+        { label: t('projects.techGroups.backend'), items: ["Django", "API Django", "Gunicorn", "Celery"] },
+        { label: t('projects.techGroups.frontend'), items: ["Django Templates", "HTML", "CSS", "Bootstrap", "JavaScript"] },
+        { label: t('projects.techGroups.mobile'), items: ["React Native"] },
+        { label: t('projects.techGroups.infra'), items: ["Docker", "NGINX", "Redis"] },
+        { label: t('projects.techGroups.database'), items: ["Postgres"] },
       ],
-      imageUrl: base + "urbanlive.png", // coloque o arquivo em public/urbanlive.png
+      imageUrl: base + "urbanlive.png",
       imageMode: "contain",
       siteUrl: "https://www.urbanlive.com.br/",
       presentationUrl: "https://www.canva.com/design/DAGs6KRx-yE/04S6ys2Nq_Ndqc6EpMXt2g/watch",
     },
     {
       title: "Obreiro Virtual",
-      description: "Plataforma SaaS Multitenant para gestão eclesiástica completa. Sistema hierárquico de denominações, igrejas e filiais com módulos de membros, visitantes, QR Code para cadastro e permissões granulares.",
+      description: t('projects.items.obreiro.description'),
       techGroups: [
-        { label: "Backend", items: ["Django", "Django REST Framework", "Gunicorn", "Celery"] },
-        { label: "Frontend", items: ["React", "TypeScript", "Vite"] },
-        { label: "Infra", items: ["Docker", "Docker Compose", "NGINX", "Redis"] },
-        { label: "Banco de Dados", items: ["PostgreSQL"] },
+        { label: t('projects.techGroups.backend'), items: ["Django", "Django REST Framework", "Gunicorn", "Celery"] },
+        { label: t('projects.techGroups.frontend'), items: ["React", "TypeScript", "Vite"] },
+        { label: t('projects.techGroups.infra'), items: ["Docker", "Docker Compose", "NGINX", "Redis"] },
+        { label: t('projects.techGroups.database'), items: ["PostgreSQL"] },
       ],
       imageUrl: base + "obreiro_screenshot.png",
       imageMode: "contain",
@@ -43,45 +48,45 @@ const projectsData: Array<{
     },
     {
       title: "Costurai.com.br",
-      description: "Transforme a gestão da sua confecção com eficiência e controle total. Simplifique processos, controle a produção e potencialize seus resultados.",
+      description: t('projects.items.costurai.description'),
       techGroups: [
-        { label: "Backend", items: ["Django", "API Django", "Gunicorn", "Celery"] },
-        { label: "Frontend", items: ["Django Templates", "HTML", "CSS", "Bootstrap", "JavaScript"] },
-        { label: "Infra", items: ["Docker", "NGINX", "Redis"] },
-        { label: "Banco de Dados", items: ["Postgres"] },
+        { label: t('projects.techGroups.backend'), items: ["Django", "API Django", "Gunicorn", "Celery"] },
+        { label: t('projects.techGroups.frontend'), items: ["Django Templates", "HTML", "CSS", "Bootstrap", "JavaScript"] },
+        { label: t('projects.techGroups.infra'), items: ["Docker", "NGINX", "Redis"] },
+        { label: t('projects.techGroups.database'), items: ["Postgres"] },
       ],
-      imageUrl: base + "costurai1.png", // colocar arquivo em public/costurai1.png
+      imageUrl: base + "costurai1.png",
       siteUrl: "https://www.costurai.com.br/",
       imageMode: "contain",
     },
     {
       title: "Indicaai",
-      description: "Plataforma marketplace B2B/B2C inovadora que conecta pessoas e empresas com necessidades a fornecedores qualificados. Usuários publicam demandas e recebem orçamentos personalizados de profissionais cadastrados.",
+      description: t('projects.items.indicaai.description'),
       techGroups: [
-        { label: "Backend", items: ["Django", "API Django", "Gunicorn", "Celery"] },
-        { label: "Frontend", items: ["Django Templates", "HTML", "CSS", "Bootstrap", "JavaScript", "PWA"] },
-        { label: "Infra", items: ["Docker", "NGINX", "Redis"] },
-        { label: "Banco de Dados", items: ["Postgres"] },
+        { label: t('projects.techGroups.backend'), items: ["Django", "API Django", "Gunicorn", "Celery"] },
+        { label: t('projects.techGroups.frontend'), items: ["Django Templates", "HTML", "CSS", "Bootstrap", "JavaScript", "PWA"] },
+        { label: t('projects.techGroups.infra'), items: ["Docker", "NGINX", "Redis"] },
+        { label: t('projects.techGroups.database'), items: ["Postgres"] },
       ],
-      imageUrl: base + "indicai.png", // colocar arquivo em public/indicai.png
+      imageUrl: base + "indicai.png",
       siteUrl: "https://necessito.online/",
       imageMode: "contain",
     },
     {
       title: "Portal de Dados Abertos do Governo Federal",
-      description: "Projetos da Coordenação de Transparência e Relatórios Gerenciais (DELOG/MGI): API de Dados Abertos, Allice (integração Compras Gov), Chatbot COTIN (IA), Portal PNCP em Números, entre outros ativos de transparência e análise.",
+      description: t('projects.items.dadosabertos.description'),
       tags: ["API", "Dados Abertos", "ETL", "PowerBI", "Databricks", "Chatbot IA", "SQL"],
-      imageUrl: base + "DadosAbertos.png", // colocar arquivo em public/DadosAbertos.png
+      imageUrl: base + "DadosAbertos.png",
       siteUrl: "https://www.gov.br/compras/pt-br/cidadao/compras-publicas-dados-abertos",
       imageMode: "contain",
     },
     {
       title: "LimpaPro",
-      description: "Site institucional moderno e responsivo para empresa de limpeza profissional. Interface elegante com foco na conversão de leads e apresentação dos serviços.",
+      description: t('projects.items.limpapro.description'),
       techGroups: [
-        { label: "Frontend", items: ["React", "TypeScript", "Next.js"] },
-        { label: "Styling", items: ["Tailwind CSS", "Framer Motion"] },
-        { label: "Deploy", items: ["Vercel"] },
+        { label: t('projects.techGroups.frontend'), items: ["React", "TypeScript", "Next.js"] },
+        { label: t('projects.techGroups.styling'), items: ["Tailwind CSS", "Framer Motion"] },
+        { label: t('projects.techGroups.deploy'), items: ["Vercel"] },
       ],
       imageUrl: base + "limpapro1.png",
       siteUrl: "https://limpapro.vercel.app/",
@@ -89,25 +94,23 @@ const projectsData: Array<{
     },
     {
       title: "Cowboy Ariza",
-      description: "E-commerce canadense da marca Cowboy Ariza. Projeto internacional desenvolvido em Django, VueJS e Postgres. Hospedado na Hostinger com integração Stripe para pagamentos e Montreal DropShip para frete.",
+      description: t('projects.items.cowboy.description'),
       techGroups: [
-        { label: "Backend", items: ["Django"] },
-        { label: "Frontend", items: ["VueJS"] },
-        { label: "Banco de Dados", items: ["Postgres"] },
-        { label: "Infra", items: ["Hostinger"] },
-        { label: "Integrações", items: ["Stripe", "Montreal DropShip"] },
+        { label: t('projects.techGroups.backend'), items: ["Django"] },
+        { label: t('projects.techGroups.frontend'), items: ["VueJS"] },
+        { label: t('projects.techGroups.database'), items: ["Postgres"] },
+        { label: t('projects.techGroups.infra'), items: ["Hostinger"] },
+        { label: t('projects.techGroups.integrations'), items: ["Stripe", "Montreal DropShip"] },
       ],
       imageUrl: base + "cowboy_ariza.png",
       siteUrl: "https://cowboyariza.ca",
       imageMode: "contain",
     },
   ];
-
-export const Projects = () => {
   return (
     <section id="projects" className="py-16 sm:py-20 lg:py-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-10 lg:mb-12 tracking-tight">Projetos em Destaque</h2>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-10 lg:mb-12 tracking-tight">{t('projects.title')}</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {projectsData.map((project) => (
             <ProjectCard key={project.title} {...project} />

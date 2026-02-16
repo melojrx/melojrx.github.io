@@ -1,6 +1,9 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
+  const { t } = useTranslation();
+  
   return (
     <footer className="py-8 sm:py-10 lg:py-12 bg-secondary/60 border-t border-border/40 mt-16 sm:mt-20 relative overflow-hidden">
       <div className="pointer-events-none absolute inset-0 [background-image:radial-gradient(circle_at_center,rgba(255,255,255,0.05),transparent_70%)]" />
@@ -10,14 +13,14 @@ export const Footer = () => {
             href="https://github.com/melojrx"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub: melojrx"
+            aria-label={t('footer.ariaLabels.github')}
             className="text-foreground/70 hover:text-primary transition-colors"
           >
             <Github className="h-6 w-6 sm:h-7 sm:w-7" />
           </a>
           <a
             href="mailto:jrmeloafrf@gmail.com"
-            aria-label="Enviar email para jrmeloafrf@gmail.com"
+            aria-label={t('footer.ariaLabels.email')}
             className="text-foreground/70 hover:text-primary transition-colors"
           >
             <Mail className="h-6 w-6 sm:h-7 sm:w-7" />
@@ -26,7 +29,7 @@ export const Footer = () => {
             href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=júnior-melo-a4817127"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="LinkedIn"
+            aria-label={t('footer.ariaLabels.linkedin')}
             className="text-foreground/70 hover:text-primary transition-colors"
           >
             <Linkedin className="h-6 w-6 sm:h-7 sm:w-7" />
@@ -35,7 +38,7 @@ export const Footer = () => {
             href="https://medium.com/@jrmeloafrf"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Medium"
+            aria-label={t('footer.ariaLabels.medium')}
             className="text-foreground/70 hover:text-primary transition-colors"
           >
             {/* Ícone Medium minimalista */}
@@ -52,7 +55,7 @@ export const Footer = () => {
         </div>
         <p className="mt-6 sm:mt-8 flex items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm text-foreground/55">
           <img src="/logo-white.svg" alt="Logo" className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6" />
-          <span>© {new Date().getFullYear()} Júnior Melo. Portfólio pessoal.</span>
+          <span>{t('footer.copyright', { year: new Date().getFullYear() })}</span>
         </p>
       </div>
     </footer>
