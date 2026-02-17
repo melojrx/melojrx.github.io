@@ -49,6 +49,9 @@
       "caseStudy": "View Case Study"
     },
     "items": {
+      "brabus": {
+        "description": "Premium landing page for a modern convenience store and tobacco shop. Built with React 19, TypeScript, and Vite 7, featuring sophisticated dark mode design, custom animations, WhatsApp/Instagram integration, online catalog, delivery system, and interactive map. Optimized performance and responsive UX across all devices."
+      },
       "urbanlive": {
         "description": "Complete platform that connects citizens and government for more agile, transparent, and collaborative urban stewardship."
       },

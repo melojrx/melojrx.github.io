@@ -49,6 +49,9 @@
       "caseStudy": "Ver Estudo de Caso"
     },
     "items": {
+      "brabus": {
+        "description": "Landing page premium para conveniência e tabacaria moderna. Desenvolvida com React 19, TypeScript e Vite 7, apresenta design dark mode sofisticado, animações customizadas, integração com WhatsApp/Instagram, catálogo online, sistema de delivery e mapa interativo. Performance otimizada e UX responsiva em todos os dispositivos."
+      },
       "urbanlive": {
         "description": "Plataforma completa que conecta cidadãos e governo para uma zeladoria urbana mais ágil, transparente e colaborativa."
       },

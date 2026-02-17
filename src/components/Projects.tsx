@@ -19,19 +19,18 @@ export const Projects = () => {
     imageMode?: "cover" | "contain";
   }> = [
     {
-      title: "UrbanLive",
-      description: t('projects.items.urbanlive.description'),
+      title: "Brabus Conveniência & Tabacaria",
+      description: t('projects.items.brabus.description'),
       techGroups: [
-        { label: t('projects.techGroups.backend'), items: ["Django", "API Django", "Gunicorn", "Celery"] },
-        { label: t('projects.techGroups.frontend'), items: ["Django Templates", "HTML", "CSS", "Bootstrap", "JavaScript"] },
-        { label: t('projects.techGroups.mobile'), items: ["React Native"] },
-        { label: t('projects.techGroups.infra'), items: ["Docker", "NGINX", "Redis"] },
-        { label: t('projects.techGroups.database'), items: ["Postgres"] },
+        { label: t('projects.techGroups.frontend'), items: ["React 19", "TypeScript", "Tailwind CSS"] },
+        { label: t('projects.techGroups.styling'), items: ["Lucide React", "Custom Animations"] },
+        { label: t('projects.techGroups.infra'), items: ["Vite 7"] },
+        { label: t('projects.techGroups.deploy'), items: ["Vercel"] },
       ],
-      imageUrl: base + "urbanlive.png",
+      imageUrl: base + "brabus_screenshot.png",
       imageMode: "contain",
-      siteUrl: "https://www.urbanlive.com.br/",
-      presentationUrl: "https://www.canva.com/design/DAGs6KRx-yE/04S6ys2Nq_Ndqc6EpMXt2g/watch",
+      siteUrl: "https://brabusconveniencia.vercel.app/",
+      presentationUrl: "https://github.com/melojrx/tachyon-omega",
     },
     {
       title: "Obreiro Virtual",
@@ -105,6 +104,21 @@ export const Projects = () => {
       imageUrl: base + "cowboy_ariza.png",
       siteUrl: "https://cowboyariza.ca",
       imageMode: "contain",
+    },
+    {
+      title: "UrbanLive",
+      description: t('projects.items.urbanlive.description'),
+      techGroups: [
+        { label: t('projects.techGroups.backend'), items: ["Django", "API Django", "Gunicorn", "Celery"] },
+        { label: t('projects.techGroups.frontend'), items: ["Django Templates", "HTML", "CSS", "Bootstrap", "JavaScript"] },
+        { label: t('projects.techGroups.mobile'), items: ["React Native"] },
+        { label: t('projects.techGroups.infra'), items: ["Docker", "NGINX", "Redis"] },
+        { label: t('projects.techGroups.database'), items: ["Postgres"] },
+      ],
+      imageUrl: base + "urbanlive.png",
+      imageMode: "contain",
+      siteUrl: "https://www.urbanlive.com.br/",
+      presentationUrl: "https://www.canva.com/design/DAGs6KRx-yE/04S6ys2Nq_Ndqc6EpMXt2g/watch",
     },
   ];
   return (

@@ -49,6 +49,9 @@
       "caseStudy": "Voir l'étude de cas"
     },
     "items": {
+      "brabus": {
+        "description": "Page d'accueil premium pour un magasin de proximité et tabac moderne. Construite avec React 19, TypeScript et Vite 7, présentant un design dark mode sophistiqué, animations personnalisées, intégration WhatsApp/Instagram, catalogue en ligne, système de livraison et carte interactive. Performance optimisée et UX responsive sur tous les appareils."
+      },
       "urbanlive": {
         "description": "Plateforme complète qui connecte les citoyens et le gouvernement pour une gestion urbaine plus agile, transparente et collaborative."
       },
