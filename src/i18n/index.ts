@@ -29,7 +29,7 @@ i18n
   .init({
     resources,
     fallbackLng: 'en', // Fallback language
-    lng: 'pt', // Default language
+    lng: 'en', // Default language
     debug: import.meta.env.DEV, // Enable debug in development
     
     interpolation: {
