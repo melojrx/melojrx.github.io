@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# AI assistant config files
+.qwen/
+AI_RULES.md
+.cursorrules
+.cursorignore
+CLAUDE.md
+.copilot/
