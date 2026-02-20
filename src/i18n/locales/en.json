@@ -72,6 +72,9 @@
       },
       "cowboy": {
         "description": "Canadian e-commerce for Cowboy Ariza brand. International project developed in Django, VueJS, and Postgres. Hosted on Hostinger with Stripe integration for payments and Montreal DropShip for shipping."
+      },
+      "deadsouls": {
+        "description": "Challenging 2D action game inspired by the aesthetics and difficulty of classic Souls-like games. Face merciless bosses, collect souls to strengthen your blade, and try to survive the abyss. Built with React 19, TypeScript, and Canvas API, powered by Google Gemini AI that generates dynamic boss dialogues in real time based on the player's performance."
       }
     }
   },

@@ -120,6 +120,21 @@ export const Projects = () => {
       siteUrl: "https://www.urbanlive.com.br/",
       presentationUrl: "https://www.canva.com/design/DAGs6KRx-yE/04S6ys2Nq_Ndqc6EpMXt2g/watch",
     },
+    {
+      title: "Dead Souls",
+      description: t('projects.items.deadsouls.description'),
+      techGroups: [
+        { label: t('projects.techGroups.frontend'), items: ["React 19", "TypeScript", "Canvas API"] },
+        { label: t('projects.techGroups.styling'), items: ["TailwindCSS"] },
+        { label: t('projects.techGroups.infra'), items: ["Vite"] },
+        { label: t('projects.techGroups.integrations'), items: ["Google Gemini AI", "Web Audio API"] },
+        { label: t('projects.techGroups.deploy'), items: ["Vercel"] },
+      ],
+      imageUrl: base + "dead_souls_screenshot.png",
+      imageMode: "cover",
+      siteUrl: "https://dead-souls.vercel.app/",
+      presentationUrl: "https://github.com/melojrx/dead-souls",
+    },
   ];
   return (
     <section id="projects" className="py-16 sm:py-20 lg:py-24">
