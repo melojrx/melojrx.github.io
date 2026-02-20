@@ -7,6 +7,16 @@
     <title>Júnior Melo • Portfólio</title>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="alternate icon" href="./favicon.ico" />
+    <script>
+      // Restaura a rota salva pelo 404.html para funcionamento de SPA no GitHub Pages
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
