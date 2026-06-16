@@ -52,6 +52,9 @@
       "brabus": {
         "description": "Page d'accueil premium pour un magasin de proximité et tabac moderne. Construite avec React 19, TypeScript et Vite 7, présentant un design dark mode sophistiqué, animations personnalisées, intégration WhatsApp/Instagram, catalogue en ligne, système de livraison et carte interactive. Performance optimisée et UX responsive sur tous les appareils."
       },
+      "brabusstore": {
+        "description": "E-commerce full stack pour Brabus Performance Store, axé sur la supplémentation et la mode fitness. Catalogue avec variantes et contrôle des stocks, checkout Mercado Pago (Pix et carte), livraison locale et nationale, espace client, panneau admin avec PDV en magasin, webhooks et API d'intégrations — opération omnicanale entre boutique physique, Instagram et vente en ligne."
+      },
       "urbanlive": {
         "description": "Plateforme complète qui connecte les citoyens et le gouvernement pour une gestion urbaine plus agile, transparente et collaborative."
       },
@@ -66,6 +69,9 @@
       },
       "dadosabertos": {
         "description": "Projets de la Coordination de la Transparence et des Rapports de Gestion (DELOG/MGI): API de Données Ouvertes, Allice (intégration Compras Gov), Chatbot COTIN (IA), Portail PNCP en Chiffres, parmi d'autres actifs de transparence et d'analyse."
+      },
+      "portaldados": {
+        "description": "Portail institutionnel de données ouvertes sur les achats publics du gouvernement fédéral (DELOG/MGI). Centralise l'accès à l'API REST, à l'explorateur de données, aux tableaux de bord, à la documentation technique, au dépôt CSV et aux ressources de transparence active de l'écosystème SIASG/Compras.gov.br, avec une interface alignée sur le Gov.br Design System."
       },
       "limpapro": {
         "description": "Site institutionnel moderne et réactif pour entreprise de nettoyage professionnel. Interface élégante axée sur la conversion de leads et la présentation des services."

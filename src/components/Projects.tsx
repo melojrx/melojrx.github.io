@@ -33,6 +33,22 @@ export const Projects = () => {
       presentationUrl: "https://github.com/melojrx/tachyon-omega",
     },
     {
+      title: "Brabu's Performance Store",
+      description: t('projects.items.brabusstore.description'),
+      techGroups: [
+        { label: t('projects.techGroups.frontend'), items: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS 4"] },
+        { label: t('projects.techGroups.styling'), items: ["Framer Motion", "Lucide React"] },
+        { label: t('projects.techGroups.backend'), items: ["NextAuth 5", "Prisma", "Zod"] },
+        { label: t('projects.techGroups.database'), items: ["PostgreSQL"] },
+        { label: t('projects.techGroups.integrations'), items: ["Mercado Pago", "Melhor Envio", "Instagram Graph API", "Webhooks API"] },
+        { label: t('projects.techGroups.infra'), items: ["Docker"] },
+      ],
+      imageUrl: base + "brabus_store.png",
+      imageMode: "cover",
+      siteUrl: "https://brabustore.com.br/",
+      presentationUrl: "https://github.com/melojrx/brabus_store",
+    },
+    {
       title: "Obreiro Virtual",
       description: t('projects.items.obreiro.description'),
       techGroups: [
@@ -77,6 +93,20 @@ export const Projects = () => {
       tags: ["API", "Dados Abertos", "ETL", "PowerBI", "Databricks", "Chatbot IA", "SQL"],
       imageUrl: base + "DadosAbertos.png",
       siteUrl: "https://www.gov.br/compras/pt-br/cidadao/compras-publicas-dados-abertos",
+      imageMode: "contain",
+    },
+    {
+      title: "Portal de Dados Abertos em Compras Públicas",
+      description: t('projects.items.portaldados.description'),
+      techGroups: [
+        { label: t('projects.techGroups.frontend'), items: ["HTML Partials", "Vite", "Vanilla JavaScript", "MPA"] },
+        { label: t('projects.techGroups.styling'), items: ["Gov.br Design System", "CSS", "ECharts"] },
+        { label: t('projects.techGroups.integrations'), items: ["REST API", "Open Data API", "Plone 6", "SIASG"] },
+        { label: t('projects.techGroups.infra'), items: ["Docker", "NGINX", "Kubernetes"] },
+        { label: t('projects.techGroups.deploy'), items: ["GitHub Actions CI/CD"] },
+      ],
+      imageUrl: base + "portaldados.png",
+      siteUrl: "https://www.gov.br/compras/pt-br/cidadao/portal-de-dados-abertos",
       imageMode: "contain",
     },
     {

@@ -52,6 +52,9 @@
       "brabus": {
         "description": "Landing page premium para conveniência e tabacaria moderna. Desenvolvida com React 19, TypeScript e Vite 7, apresenta design dark mode sofisticado, animações customizadas, integração com WhatsApp/Instagram, catálogo online, sistema de delivery e mapa interativo. Performance otimizada e UX responsiva em todos os dispositivos."
       },
+      "brabusstore": {
+        "description": "E-commerce full stack da Brabus Performance Store para suplementação e moda fitness. Catálogo com variantes e controle de estoque, checkout com Mercado Pago (Pix e cartão), frete local e nacional, área do cliente, painel admin com PDV de balcão, webhooks e API de integrações — operação omnichannel entre loja física, Instagram e venda online."
+      },
       "urbanlive": {
         "description": "Plataforma completa que conecta cidadãos e governo para uma zeladoria urbana mais ágil, transparente e colaborativa."
       },
@@ -66,6 +69,9 @@
       },
       "dadosabertos": {
         "description": "Projetos da Coordenação de Transparência e Relatórios Gerenciais (DELOG/MGI): API de Dados Abertos, Allice (integração Compras Gov), Chatbot COTIN (IA), Portal PNCP em Números, entre outros ativos de transparência e análise."
+      },
+      "portaldados": {
+        "description": "Portal institucional de dados abertos em compras públicas do Governo Federal (DELOG/MGI). Centraliza acesso à API REST, explorador de dados, painéis, documentação técnica, repositório CSV e recursos de transparência ativa do ecossistema SIASG/Compras.gov.br, com interface alinhada ao Gov.br Design System."
       },
       "limpapro": {
         "description": "Site institucional moderno e responsivo para empresa de limpeza profissional. Interface elegante com foco na conversão de leads e apresentação dos serviços."

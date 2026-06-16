@@ -52,6 +52,9 @@
       "brabus": {
         "description": "Premium landing page for a modern convenience store and tobacco shop. Built with React 19, TypeScript, and Vite 7, featuring sophisticated dark mode design, custom animations, WhatsApp/Instagram integration, online catalog, delivery system, and interactive map. Optimized performance and responsive UX across all devices."
       },
+      "brabusstore": {
+        "description": "Full stack e-commerce for Brabus Performance Store focused on supplements and fitness fashion. Catalog with variants and stock control, checkout with Mercado Pago (Pix and card), local and national shipping, customer area, admin panel with in-store POS, webhooks, and integration API — omnichannel operation across physical store, Instagram, and online sales."
+      },
       "urbanlive": {
         "description": "Complete platform that connects citizens and government for more agile, transparent, and collaborative urban stewardship."
       },
@@ -66,6 +69,9 @@
       },
       "dadosabertos": {
         "description": "Projects from the Coordination of Transparency and Management Reports (DELOG/MGI): Open Data API, Allice (Compras Gov integration), COTIN Chatbot (AI), PNCP in Numbers Portal, among other transparency and analysis assets."
+      },
+      "portaldados": {
+        "description": "Institutional open data portal for federal public procurement (DELOG/MGI). Centralizes access to the REST API, data explorer, dashboards, technical documentation, CSV repository, and active transparency resources from the SIASG/Compras.gov.br ecosystem, with an interface aligned to the Gov.br Design System."
       },
       "limpapro": {
         "description": "Modern and responsive institutional website for professional cleaning company. Elegant interface focused on lead conversion and service presentation."
