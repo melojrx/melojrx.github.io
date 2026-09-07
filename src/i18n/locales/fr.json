@@ -49,6 +49,9 @@
       "caseStudy": "Voir l'étude de cas"
     },
     "items": {
+      "abratens": {
+        "description": "Plateforme institutionnelle de gestion des adhérents, des cotisations, des paiements, des communications et du libre-service."
+      },
       "brabus": {
         "description": "Page d'accueil premium pour un magasin de proximité et tabac moderne. Construite avec React 19, TypeScript et Vite 7, présentant un design dark mode sophistiqué, animations personnalisées, intégration WhatsApp/Instagram, catalogue en ligne, système de livraison et carte interactive. Performance optimisée et UX responsive sur tous les appareils."
       },

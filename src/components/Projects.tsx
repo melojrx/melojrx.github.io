@@ -19,6 +19,20 @@ export const Projects = () => {
     imageMode?: "cover" | "contain";
   }> = [
     {
+      title: "Sistema de Gestão de Associados — Abratens",
+      description: t('projects.items.abratens.description'),
+      techGroups: [
+        { label: t('projects.techGroups.backend'), items: ["Django 5.1", "Django REST Framework", "Gunicorn"] },
+        { label: t('projects.techGroups.frontend'), items: ["Django Templates", "Bootstrap 5.3", "Tailwind CSS 4", "HTMX"] },
+        { label: t('projects.techGroups.database'), items: ["PostgreSQL 17", "Redis 7"] },
+        { label: t('projects.techGroups.infra'), items: ["Docker", "NGINX", "Traefik", "Celery"] },
+        { label: t('projects.techGroups.integrations'), items: ["Asaas", "SMTP"] },
+      ],
+      imageUrl: base + "abratens.png",
+      imageMode: "contain",
+      siteUrl: "https://atpe.abratens.com.br/",
+    },
+    {
       title: "Brabus Conveniência & Tabacaria",
       description: t('projects.items.brabus.description'),
       techGroups: [
